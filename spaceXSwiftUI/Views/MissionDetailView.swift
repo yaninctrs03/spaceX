@@ -8,17 +8,8 @@
 import SwiftUI
 
 struct MissionDetailView: View {
-    var mission = Mission(mission_name: "DemoSat",
-                          rocket: Rocket(rocket_id: "falcon1",
-                                         rocket_name: "Falcon 1",
-                                         rocket_type: "Merlin A"),
-                          launch_site: LaunchSite(
-                            site_id: "kwajalein_atoll",
-                            site_name: "Kwajalein Atoll",
-                            site_name_long: "Kwajalein Atoll Omelek Island"),
-                          launch_date_unix: 1174439400,
-                          links: Links(mission_patch: "https://images2.imgbox.com/be/e7/iNqsqVYM_o.png", mission_patch_small: "https://images2.imgbox.com/4f/e3/I0lkuJ2e_o.png", flickr_images: [String]()),
-                          details: "Successful first stage burn and transition to second stage, maximum altitude 289 km, Premature engine shutdown at T+7 min 30 s, Failed to reach orbit, Failed to recover first stage")
+    @Binding var mission: MissionModel
+    
     var body: some View {
         ZStack {
             Image("starsBG")
@@ -42,7 +33,7 @@ struct MissionDetailView: View {
                     }
                     Spacer()
                     AsyncImage(
-                        url: URL(string: mission.links.mission_patch_small!),
+                        url: URL(string: mission.links.mission_patch_small ?? K.defaultPatchURL),
                         content: { image in
                             image.resizable()
                                 .aspectRatio(1, contentMode: .fit)
@@ -62,7 +53,7 @@ struct MissionDetailView: View {
                     .font(.subheadline)
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
-                Text(mission.details!)
+                Text(mission.details ?? "")
                     .font(.body)
                     .fontWeight(.regular)
                     .foregroundColor(Color.white)
@@ -85,7 +76,8 @@ struct MissionDetailView: View {
 }
 
 struct MissionDetail_Previews: PreviewProvider {
+    static private var mission = Binding.constant(Mission())
     static var previews: some View {
-        MissionDetailView()
+        MissionDetailView(mission: mission.mission)
     }
 }

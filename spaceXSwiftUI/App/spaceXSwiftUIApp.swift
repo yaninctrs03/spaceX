@@ -11,7 +11,7 @@ import SwiftUI
 struct spaceXSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            MissionDetailView()
+            MissionList()
         }
     }
 }

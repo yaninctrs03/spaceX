@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41C510C70244613BB800C228 /* Pods_spaceXSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79CF428D0C6BA0EC44B5859 /* Pods_spaceXSwiftUI.framework */; };
 		9A5D0DA829271623003247D9 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D0DA729271623003247D9 /* MissionDetailView.swift */; };
 		9A5D0DAA292718B8003247D9 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D0DA9292718B8003247D9 /* Mission.swift */; };
+		9A63D4782936711A00537CD9 /* MissionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63D4772936711A00537CD9 /* MissionRow.swift */; };
+		9A787394292807A500D3FB90 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787393292807A500D3FB90 /* RepositoryProtocol.swift */; };
+		9A7873962928086800D3FB90 /* LaunchesAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7873952928086800D3FB90 /* LaunchesAPIRepository.swift */; };
+		9A787398292809BB00D3FB90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787397292809BB00D3FB90 /* Constants.swift */; };
 		9AFAFED02925EA39001C378F /* spaceXSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAFECF2925EA39001C378F /* spaceXSwiftUIApp.swift */; };
-		9AFAFED22925EA39001C378F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAFED12925EA39001C378F /* ContentView.swift */; };
+		9AFAFED22925EA39001C378F /* MissionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAFED12925EA39001C378F /* MissionList.swift */; };
 		9AFAFED42925EA3E001C378F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFAFED32925EA3E001C378F /* Assets.xcassets */; };
 		9AFAFED72925EA3E001C378F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFAFED62925EA3E001C378F /* Preview Assets.xcassets */; };
-		9AFAFEE12925EAF9001C378F /* MissionSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAFEE02925EAF9001C378F /* MissionSUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		604C17EA1F3D61CA6C9347FF /* Pods-spaceXSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceXSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-spaceXSwiftUI/Pods-spaceXSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		9A5D0DA729271623003247D9 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
 		9A5D0DA9292718B8003247D9 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		9A63D4772936711A00537CD9 /* MissionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRow.swift; sourceTree = "<group>"; };
+		9A787393292807A500D3FB90 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		9A7873952928086800D3FB90 /* LaunchesAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesAPIRepository.swift; sourceTree = "<group>"; };
+		9A787397292809BB00D3FB90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9AFAFECC2925EA39001C378F /* spaceXSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceXSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFAFECF2925EA39001C378F /* spaceXSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceXSwiftUIApp.swift; sourceTree = "<group>"; };
-		9AFAFED12925EA39001C378F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AFAFED12925EA39001C378F /* MissionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionList.swift; sourceTree = "<group>"; };
 		9AFAFED32925EA3E001C378F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AFAFED62925EA3E001C378F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9AFAFEE02925EAF9001C378F /* MissionSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSUI.swift; sourceTree = "<group>"; };
+		A79CF428D0C6BA0EC44B5859 /* Pods_spaceXSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spaceXSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE3CD80FF8031DFBDB9EA72 /* Pods-spaceXSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceXSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-spaceXSwiftUI/Pods-spaceXSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +42,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C510C70244613BB800C228 /* Pods_spaceXSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A84C9765D9F38E8F8C3D367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				604C17EA1F3D61CA6C9347FF /* Pods-spaceXSwiftUI.debug.xcconfig */,
+				BAE3CD80FF8031DFBDB9EA72 /* Pods-spaceXSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A63D476293670CA00537CD9 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				9A63D4772936711A00537CD9 /* MissionRow.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		9A63D4792936C28A00537CD9 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		9A787390292805F500D3FB90 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9A7873922928061B00D3FB90 /* Repositories */,
+				9A7873912928060C00D3FB90 /* Protocols */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9A7873912928060C00D3FB90 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A787393292807A500D3FB90 /* RepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9A7873922928061B00D3FB90 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9A7873952928086800D3FB90 /* LaunchesAPIRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		9AFAFEC32925EA39001C378F = {
 			isa = PBXGroup;
 			children = (
 				9AFAFECE2925EA39001C378F /* spaceXSwiftUI */,
 				9AFAFECD2925EA39001C378F /* Products */,
+				3A84C9765D9F38E8F8C3D367 /* Pods */,
+				9DFABC40E905493EA918FCAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFAFEDD2925EAA9001C378F /* App */,
+				9A787390292805F500D3FB90 /* Repository */,
 				9AFAFEDE2925EABE001C378F /* Models */,
 				9AFAFEDF2925EAC5001C378F /* Views */,
 			);
@@ -78,6 +141,7 @@
 				9AFAFECF2925EA39001C378F /* spaceXSwiftUIApp.swift */,
 				9AFAFED32925EA3E001C378F /* Assets.xcassets */,
 				9AFAFED52925EA3E001C378F /* Preview Content */,
+				9A787397292809BB00D3FB90 /* Constants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -85,7 +149,6 @@
 		9AFAFEDE2925EABE001C378F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9AFAFEE02925EAF9001C378F /* MissionSUI.swift */,
 				9A5D0DA9292718B8003247D9 /* Mission.swift */,
 			);
 			path = Models;
@@ -94,10 +157,20 @@
 		9AFAFEDF2925EAC5001C378F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9AFAFED12925EA39001C378F /* ContentView.swift */,
+				9A63D4792936C28A00537CD9 /* Elements */,
+				9A63D476293670CA00537CD9 /* Row */,
+				9AFAFED12925EA39001C378F /* MissionList.swift */,
 				9A5D0DA729271623003247D9 /* MissionDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DFABC40E905493EA918FCAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A79CF428D0C6BA0EC44B5859 /* Pods_spaceXSwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AFAFEDA2925EA3E001C378F /* Build configuration list for PBXNativeTarget "spaceXSwiftUI" */;
 			buildPhases = (
+				23B714275EA601428A81CA51 /* [CP] Check Pods Manifest.lock */,
 				9AFAFEC82925EA39001C378F /* Sources */,
 				9AFAFEC92925EA39001C378F /* Frameworks */,
 				9AFAFECA2925EA39001C378F /* Resources */,
+				0B8E977FEB5387B2B2F75CF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,16 +240,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B8E977FEB5387B2B2F75CF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceXSwiftUI/Pods-spaceXSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceXSwiftUI/Pods-spaceXSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spaceXSwiftUI/Pods-spaceXSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23B714275EA601428A81CA51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spaceXSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AFAFEC82925EA39001C378F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFAFEE12925EAF9001C378F /* MissionSUI.swift in Sources */,
-				9AFAFED22925EA39001C378F /* ContentView.swift in Sources */,
+				9AFAFED22925EA39001C378F /* MissionList.swift in Sources */,
 				9AFAFED02925EA39001C378F /* spaceXSwiftUIApp.swift in Sources */,
 				9A5D0DAA292718B8003247D9 /* Mission.swift in Sources */,
+				9A63D4782936711A00537CD9 /* MissionRow.swift in Sources */,
 				9A5D0DA829271623003247D9 /* MissionDetailView.swift in Sources */,
+				9A787394292807A500D3FB90 /* RepositoryProtocol.swift in Sources */,
+				9A7873962928086800D3FB90 /* LaunchesAPIRepository.swift in Sources */,
+				9A787398292809BB00D3FB90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +417,7 @@
 		};
 		9AFAFEDB2925EA3E001C378F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604C17EA1F3D61CA6C9347FF /* Pods-spaceXSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,11 +427,13 @@
 				DEVELOPMENT_TEAM = 346WCS8T7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "spaceX 2.0";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +449,7 @@
 		};
 		9AFAFEDC2925EA3E001C378F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE3CD80FF8031DFBDB9EA72 /* Pods-spaceXSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,11 +459,13 @@
 				DEVELOPMENT_TEAM = 346WCS8T7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "spaceX 2.0";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
