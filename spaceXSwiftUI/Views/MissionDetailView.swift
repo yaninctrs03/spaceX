@@ -33,7 +33,7 @@ struct MissionDetailView: View {
                     }
                     Spacer()
                     AsyncImage(
-                        url: URL(string: mission.links.mission_patch_small ?? K.defaultPatchURL),
+                        url: URL(string: mission.links.mission_patch_small ?? K.IMG.defaultPatchURL),
                         content: { image in
                             image.resizable()
                                 .aspectRatio(1, contentMode: .fit)

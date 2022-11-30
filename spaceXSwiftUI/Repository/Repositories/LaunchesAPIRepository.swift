@@ -23,7 +23,7 @@ class LaunchesAPIRepository: RepositoryProtocol, ObservableObject{
     }
     
     func getAll(completionHandler: @escaping ([MissionModel]?, Error?) -> Void) {
-        AF.request(K.apiURL).responseDecodable(of: [MissionModel].self) { response in
+        AF.request(K.API.apiURL).responseDecodable(of: [MissionModel].self) { response in
             let _ = response.result.map { missions in
                 completionHandler(missions, nil)
             }
@@ -32,7 +32,7 @@ class LaunchesAPIRepository: RepositoryProtocol, ObservableObject{
     }
     
     func getMission(withNumber flightNumber: String, completionHandler: @escaping ([MissionModel]?, Error?) -> Void) {
-        let url = "\(K.apiURL)?flight_number=\(flightNumber)"
+        let url = "\(K.API.apiURL)?flight_number=\(flightNumber)"
         AF.request(url).responseDecodable(of: [MissionModel].self) { response in
             let _ = response.result.map { missions in
                 completionHandler(missions, nil)

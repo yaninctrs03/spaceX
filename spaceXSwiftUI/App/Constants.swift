@@ -7,17 +7,25 @@
 
 import Foundation
 
-struct K{
-    //MARK: - API
-    static let apiURL = "https://api.spacexdata.com/v3/launches"
+enum K{
+    enum API{
+        public static let apiURL = "https://api.spacexdata.com/v3/launches"
+    }
     
-    //MARK: - AppCenter
-    static let apiSecret = "d797cf12-da9f-4704-a053-b375b62aa0ac"
+    enum IMG{
+        public static let defaultPatchURL = "https://www.spacex.com/static/images/share.jpg"
+        public static let defaultHeaderURL = "https://spaceflightnow.com/wp-content/uploads/2018/02/40126461411_a6e49a61f2_k.jpg"
+    }
     
-    //MARK: - Cell Identifiers
-    static let missionCell = "MissionCell"
+    enum Text{
+        public static let title = "spaceX 2.0"
+        public static let launches = "Launches"
+    }
     
-    //MARK: - DefaultImage
-    static let defaultPatchURL = "https://www.spacex.com/static/images/share.jpg"
-    static let defaultHeaderURL = "http://spaceflightnow.com/wp-content/uploads/2018/02/40126461411_a6e49a61f2_k.jpg"
+    enum UI{
+        public static let cornerRadius = CGFloat(15.0)
+        public static let tagCornerRadius = CGFloat(10.0)
+    }
+    
+    
 }
