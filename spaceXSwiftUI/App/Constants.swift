@@ -23,6 +23,7 @@ enum K{
     }
     
     enum UI{
+        public static let backButton = "arrow.left"
         public static let cornerRadius = CGFloat(15.0)
         public static let tagCornerRadius = CGFloat(10.0)
     }

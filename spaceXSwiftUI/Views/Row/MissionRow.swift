@@ -24,11 +24,11 @@ struct MissionRow: View {
                 .frame(height: 20.0)
         }
         .onTapGesture {
-            detailIsVisible = true
+            detailIsVisible.toggle()
         }
-        .sheet(isPresented: $detailIsVisible) {
+        .fullScreenCover(isPresented: $detailIsVisible, content: {
             MissionDetailView(mission: $mission)
-        }
+        })
         
     }
 }
@@ -55,19 +55,18 @@ struct DataRowView: View{
     let mission: MissionModel
     var body: some View{
         HStack{
-            VStack(alignment: .leading, spacing: 15.0){
+            VStack(alignment: .leading, spacing: 5){
                 MissionTextRow(text: mission.mission_name)
                 RocketTextRow(text: mission.rocket.rocket_name)
-            }
-            .padding(.bottom)
-            Spacer()
-            VStack(alignment: .trailing, spacing: 15.0){
-                DateView(date: Date(timeIntervalSince1970: TimeInterval(mission.launch_date_unix)))
                 LaunchTextRow(text: mission.launch_site.site_name)
             }
             .padding(.vertical)
+            Spacer()
+            VStack(alignment: .trailing, spacing: 10.0){
+                DateView(date: Date(timeIntervalSince1970: TimeInterval(mission.launch_date_unix)))
+            }
         }
-        .padding(.all, 10)
+        .padding(.horizontal)
         .background(Color.cardBackground)
     }
 }

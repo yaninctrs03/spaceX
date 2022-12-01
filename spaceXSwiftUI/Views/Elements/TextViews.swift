@@ -22,7 +22,7 @@ struct MissionTextRow: View {
     var text: String
     var body: some View {
         Text(text)
-            .font(.title2)
+            .font(.body)
             .fontWeight(.bold)
             .foregroundColor(Color.mainText)
     }
@@ -32,7 +32,7 @@ struct RocketTextRow: View {
     var text: String
     var body: some View {
         Text(text)
-            .font(.title3)
+            .font(.callout)
             .fontWeight(.bold)
             .foregroundColor(Color.secondaryText)
     }
@@ -42,7 +42,7 @@ struct LaunchTextRow: View {
     var text: String
     var body: some View {
         Text(text)
-            .font(.title3)
+            .font(.callout)
             .fontWeight(.semibold)
             .foregroundColor(Color.secondaryText)
     }
