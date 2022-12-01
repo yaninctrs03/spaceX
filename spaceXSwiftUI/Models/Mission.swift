@@ -18,6 +18,7 @@ struct Mission {
                                 site_name: "Kwajalein Atoll",
                                 site_name_long: "Kwajalein Atoll Omelek Island"),
                                launch_date_unix: 1174439400,
+                               launch_success: false,
                                links: Links(mission_patch: "https://images2.imgbox.com/be/e7/iNqsqVYM_o.png", mission_patch_small: "https://images2.imgbox.com/4f/e3/I0lkuJ2e_o.png", flickr_images: [String]()),
                                details: "Successful first stage burn and transition to second stage, maximum altitude 289 km, Premature engine shutdown at T+7 min 30 s, Failed to reach orbit, Failed to recover first stage")
 }
@@ -29,6 +30,7 @@ struct MissionModel: Codable, Identifiable {
     let rocket: Rocket
     let launch_site: LaunchSite
     let launch_date_unix: Int
+    let launch_success: Bool?
     let links: Links
     let details: String?
 }
