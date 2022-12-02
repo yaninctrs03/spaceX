@@ -15,6 +15,8 @@ extension Color{
     static let tagBackground = Color("Tags")
     static let mainText = Color("MainText")
     static let secondaryText = Color("SecondaryText")
+    static let roundedButton = Color("RoundedButton")
+    
 }
 
 extension URL {

@@ -18,43 +18,66 @@ struct TitleText: View {
     }
 }
 
-struct MissionTextRow: View {
+struct TitleMissionRow: View {
     var text: String
     var body: some View {
         Text(text)
-            .font(.body)
-            .fontWeight(.bold)
+            .font(.title3)
+            .fontWeight(.heavy)
             .foregroundColor(Color.mainText)
     }
 }
 
-struct RocketTextRow: View {
+struct SubtitleMissionRow: View {
     var text: String
     var body: some View {
         Text(text)
             .font(.callout)
-            .fontWeight(.bold)
+            .fontWeight(.medium)
             .foregroundColor(Color.secondaryText)
     }
 }
 
-struct LaunchTextRow: View {
+struct DescriptionDetail: View {
     var text: String
     var body: some View {
         Text(text)
-            .font(.callout)
-            .fontWeight(.semibold)
-            .foregroundColor(Color.secondaryText)
+            .font(.body)
+            .fontWeight(.medium)
+            .foregroundColor(Color.mainText)
     }
 }
+
+struct TitleDetail: View {
+    var text: String
+    var body: some View {
+        Text(text)
+            .font(.headline)
+            .fontWeight(.semibold)
+            .foregroundColor(Color.mainText)
+    }
+}
+
+struct SubtitleDetail: View {
+    var text: String
+    var body: some View {
+        Text(text)
+            .font(.headline)
+            .fontWeight(.regular)
+            .foregroundColor(Color.mainText)
+    }
+}
+
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
             TitleText(text: "Launches")
-            MissionTextRow(text: "STP-2")
-            RocketTextRow(text: "Falcon Heavy")
-            
+            TitleMissionRow(text: "STP-2")
+            SubtitleMissionRow(text: "Falcon Heavy")
+            DescriptionDetail(text: "sldfsdjfbsldkjbfsdjbgsjdbgsjdb;akhgireuglakdnaldiugrgbdvbladifgsjdfbgs")
+            TitleDetail(text: "Rocket Name")
+            SubtitleDetail(text: "Falcon Heavy")
         }
     }
 }

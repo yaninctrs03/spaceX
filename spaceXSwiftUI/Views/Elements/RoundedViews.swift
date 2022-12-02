@@ -12,10 +12,10 @@ struct DateView: View {
     var body: some View {
         Text(date, format:
                 Date.FormatStyle()
-                    .month(.abbreviated)
+            .month(.abbreviated)
                     .day())
             .fontWeight(.semibold)
-            .foregroundColor(Color.secondaryText)
+            .foregroundColor(Color.white)
             .kerning(1.0)
             .bold()
             .font(.caption)
@@ -33,7 +33,7 @@ struct BackView: View {
             .font(.title)
             .frame(width: 50, height: 50)
             .foregroundColor(Color.mainText)
-            .background(RoundedRectangle(cornerRadius: K.UI.cornerRadius).fill(Color.cardBackground))
+            .background(RoundedRectangle(cornerRadius: K.UI.cornerRadius).fill(Color.roundedButton))
             
     }
 }

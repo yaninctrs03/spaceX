@@ -9,15 +9,15 @@ import SwiftUI
 
 struct MissionList: View {
     @State private var detailIsShowing = false
-    @State private var launchSuccess = false
+    @State private var launchSuccess = true
     var body: some View {
         ZStack {
             BackgroundView()
             VStack(alignment: .leading){
                 TitleText(text: K.Text.launches)
-                    .padding(.horizontal, 20)
+                    .padding()
                 SegmentedView(launchSuccess: $launchSuccess)
-                MissionListView()
+                MissionListView(launchSuccess: $launchSuccess)
             }
         }
     }
@@ -27,22 +27,26 @@ struct SegmentedView: View {
     @Binding var launchSuccess: Bool
     var body: some View{
         VStack {
-            Picker("What is your favorite color?", selection: $launchSuccess) {
-                Text("Success").tag(true)
+            Picker("Mission Type", selection: $launchSuccess) {
+                Text("Succeeded").tag(true)
                 Text("Not Succeded").tag(false)
             }
+            .padding(.horizontal, 30)
             .pickerStyle(.segmented)
-            Text("Value: \(launchSuccess.description)")
+            .foregroundColor(Color.accentColor)
         }
     }
 }
 
 struct MissionListView: View {
     @ObservedObject var repository = LaunchesAPIRepository()
+    @Binding var launchSuccess: Bool
     var body: some View {
         List{
             ForEach($repository.missions.indices, id: \.self) { i in
-                MissionRow(mission: $repository.missions[i], detailIsVisible: false)
+                if repository.missions[i].launch_success == launchSuccess{
+                    MissionRow(mission: $repository.missions[i], detailIsVisible: false)
+                }
             }
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
@@ -54,9 +58,9 @@ struct MissionListView: View {
                 }
             }
         }
+        .padding(.horizontal, 20.0)
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .environment(\.defaultMinListRowHeight, 300)
     }
 }
 

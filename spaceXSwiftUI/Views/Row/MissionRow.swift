@@ -21,7 +21,7 @@ struct MissionRow: View {
                     })
             .cornerRadius(K.UI.cornerRadius)
             Spacer()
-                .frame(height: 20.0)
+                .frame(height: 15.0)
         }
         .onTapGesture {
             detailIsVisible.toggle()
@@ -41,8 +41,8 @@ struct ImageRowView: View {
             content: { image in
                 image
                     .resizable()
-                    .frame(maxWidth: 400, maxHeight: 300)
-                    .aspectRatio(contentMode: .fill)
+                    .frame(maxHeight: 250)
+                    .aspectRatio(0.5, contentMode: .fill)
                     
             },
             placeholder: {
@@ -55,10 +55,10 @@ struct DataRowView: View{
     let mission: MissionModel
     var body: some View{
         HStack{
-            VStack(alignment: .leading, spacing: 5){
-                MissionTextRow(text: mission.mission_name)
-                RocketTextRow(text: mission.rocket.rocket_name)
-                LaunchTextRow(text: mission.launch_site.site_name)
+            VStack(alignment: .leading, spacing: 4){
+                TitleMissionRow(text: mission.mission_name)
+                SubtitleMissionRow(text: mission.rocket.rocket_name)
+                SubtitleMissionRow(text: mission.launch_site.site_name)
             }
             .padding(.vertical)
             Spacer()

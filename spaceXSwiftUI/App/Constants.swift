@@ -28,5 +28,15 @@ enum K{
         public static let tagCornerRadius = CGFloat(10.0)
     }
     
+    enum MissionDetail{
+        public static let rocketName = "Rocket Name"
+        public static let rocketType = "Rocket Type"
+        public static let launchSite = "Launch Site"
+        public static let launchDate = "Launch Date"
+        public static let succeeded = "Succeeded"
+        public static let yes = "Yes"
+        public static let no = "No"
+    }
+    
     
 }

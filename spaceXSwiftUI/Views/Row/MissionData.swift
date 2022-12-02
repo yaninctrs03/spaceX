@@ -15,10 +15,32 @@ struct MissionData: View {
             Rectangle()
                 .fill(Color.accentColor)
                 .frame(width: 2, height: 50)
-                
+            
             VStack(alignment: .leading){
-                MissionTextRow(text: title)
-                MissionTextRow(text: subtitle)
+                TitleDetail(text: title)
+                SubtitleDetail(text: subtitle)
+            }
+        }
+    }
+}
+
+struct MissionDataDate: View {
+    let title: String
+    let date: Date
+    var body: some View {
+        HStack {
+            Rectangle()
+                .fill(Color.accentColor)
+                .frame(width: 2, height: 50)
+            
+            VStack(alignment: .leading){
+                TitleDetail(text: title)
+                //                SubtitleDetail(text: subtitle)
+                Text(date, format:
+                        Date.FormatStyle()
+                    .month(.wide)
+                    .day()
+                    .year())
             }
         }
     }
@@ -26,6 +48,9 @@ struct MissionData: View {
 
 struct MissionData_Previews: PreviewProvider {
     static var previews: some View {
-        MissionData(title: "Rocket Name", subtitle: "Falcon 9")
+        VStack{
+            MissionData(title: "Rocket Name", subtitle: "Falcon 9")
+            MissionDataDate(title: "Launch Date", date: Date())
+        }
     }
 }
